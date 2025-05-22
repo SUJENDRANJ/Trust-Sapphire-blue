@@ -1488,7 +1488,7 @@ img {
   -webkit-text-stroke-width: 4px; */
   color: #fdc14ad6;
   font-weight: 700;
-  font-family: cursive;
+  font-family: sans-serif;
 }
 @media (max-width: 767px) {
   .hero_slider .hero_slider_item .content .shado_text span,
@@ -1530,7 +1530,6 @@ img {
   text-transform: uppercase;
   line-height: 1.205;
   margin-bottom: 0;
-  font-family: cursive;
 }
 @media (max-width: 991px) {
   .hero_slider .hero_slider_item .content .title h2,
