@@ -31,16 +31,61 @@
   <body>
     <div class="main_page_wrapper">
       <!-- ==== header start ==== -->
-      <header class="header_section header_style_s2">
-        <div class="header_wrap">
-          <div class="container-fluid">
+      <header class="header_section">
+        <div class="header_top">
+          <div class="container">
             <div class="row align-items-center">
-              <div class="col-lg-3 col-8">
-                <a href="index.html" class="logo">
-                  <img src="assets/images/logo-s3.png" alt="" />
-                </a>
+              <div class="col-lg-7 col-12">
+                <div class="contacr_info">
+                  <ul>
+                    <li>
+                      <div class="number">
+                        <span>NEWS:</span>Give Ready to help us
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="col-lg-6 col-4">
+              <div class="col-lg-5 col-12">
+                <div class="contacr_right">
+                  <ul>
+                    <li><span>Visit our social pages:</span></li>
+                    <li>
+                      <a href="#">
+                        <i class="ti-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="ti-twitter-alt"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="ti-skype"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="ti-linkedin"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header_wrap">
+          <a href="index.html" class="logo">
+            <img src="assets/images/logo.png" alt="" />
+          </a>
+          <div class="header_about_btn" onclick="openNav()">
+            <img src="assets/images/about_btn.png" alt="" />
+          </div>
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-8 col-12">
                 <div class="mobile_menu_btn">
                   <div class="icon">
                     <i class="ti-align-justify" id="bar_close"></i>
@@ -48,55 +93,24 @@
                 </div>
                 <div class="menu_wrap" id="menu_wrap">
                   <ul class="main_menu">
-                    <li class="menu_chaild">
-                      <a href="#">Home</a>
-                      <ul class="submenu">
-                        <li><a href="index.html">home style 1</a></li>
-                        <li><a href="index-2.html">home style 2</a></li>
-                        <li><a href="index-3.html">home style 3</a></li>
-                        <li><a href="index-4.html">home style 4</a></li>
-                      </ul>
+                    <li>
+                      <a href="index.html">Home</a>
                     </li>
+
                     <li><a href="about.html">about us</a></li>
-                    <li class="menu_chaild">
-                      <a href="#">Service</a>
-                      <ul class="submenu">
-                        <li><a href="services.html">Services 1</a></li>
-                        <li><a href="services-s2.html">Services 2</a></li>
-                        <li><a href="services-s3.html">Services 3</a></li>
-                        <li><a href="services-s4.html">Services 4</a></li>
-                        <li>
-                          <a href="services-single.html">Services single</a>
-                        </li>
-                      </ul>
+
+                    <li><a href="services.html">Services</a></li>
+                    <li>
+                      <a href="project-single.html">projects</a>
                     </li>
-                    <li class="menu_chaild">
-                      <a href="#">Pages</a>
-                      <ul class="submenu">
-                        <li><a href="causes.html">causes</a></li>
-                        <li><a href="causes-single.html">causes single</a></li>
-                        <li><a href="project.html">project</a></li>
-                        <li>
-                          <a href="project-single.html">project single</a>
-                        </li>
-                        <li><a href="team.html">team</a></li>
-                        <li><a href="testimonial.html">testimonial</a></li>
-                        <li><a href="faq.html">faq</a></li>
-                        <li><a href="404.html">404</a></li>
-                      </ul>
-                    </li>
-                    <li class="menu_chaild">
-                      <a href="#">blog</a>
-                      <ul class="submenu">
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="blog-single.html">Blog Single</a></li>
-                      </ul>
-                    </li>
+
+                    <li><a href="blog.html">Blogs</a></li>
+
                     <li><a href="contact.html">contact</a></li>
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-3 col-12">
+              <div class="col-lg-4 col-12">
                 <div class="header_right">
                   <div class="search_icon">
                     <i class="ti-search bx-search"></i>
@@ -120,6 +134,28 @@
           </div>
         </div>
       </header>
+      <div class="mobile_cart" id="mobile_cart">
+        <div class="wrap_cart">
+          <div class="about_logo">
+            <img
+              src="assets/images/logo.png"
+              alt="Sapphire Blue Social Trust Logo"
+            />
+          </div>
+          <div class="cart_close" onclick="closeNav()">×</div>
+          <div class="content">
+            <h2>Sapphire Blue Social Trust (SBST) Overview</h2>
+
+            <h3>Contact</h3>
+            <p>Email: sapphirebluesocialtrust@gmail.com</p>
+            <p>Phone: 99762 9999, 98945 35100, 96777 77193</p>
+            <p>
+              Address: No.5 Vemandampalayam, Attavanai Hanumanpalli Post,
+              Arachalur via, Erode-638101, Tamil Nadu
+            </p>
+          </div>
+        </div>
+      </div>
 
       <!--  page_title_section  start-->
       <section class="page_title_section">
@@ -127,9 +163,9 @@
           <div class="row">
             <div class="col-12">
               <div class="content">
-                <h2>Contact Page</h2>
+                <h2>Contact</h2>
                 <ul>
-                  <li><a href="index.html">Hone</a></li>
+                  <li><a href="index.html">Home</a></li>
                   <li>Contact Page</li>
                 </ul>
               </div>
@@ -213,8 +249,7 @@
                 </div>
                 <div class="content">
                   <h2>Call This Now</h2>
-                  <span>+584440066953</span>
-                  <span>+8265425554811</span>
+                  <span>+91 99762 9999 </span>
                 </div>
               </div>
             </div>
@@ -225,8 +260,8 @@
                 </div>
                 <div class="content">
                   <h2>Your Message</h2>
-                  <span>nonta@gmail.com</span>
-                  <span>nonta@gmail.com</span>
+                  sapphirebluesocialtrust <br />
+                  @gmail.com
                 </div>
               </div>
             </div>
@@ -237,10 +272,7 @@
                 </div>
                 <div class="content">
                   <h2>Your location</h2>
-                  <span
-                    >3825 Bee Street <br />
-                    MI 49686</span
-                  >
+                  <span>Erode - 638101, Tamil Nadu, India</span>
                 </div>
               </div>
             </div>
@@ -251,7 +283,7 @@
       <div class="map_right s2">
         <div class="map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13249.247068040606!2d151.20960562674117!3d-33.8816236491114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1468899355787"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.302950337212!2d77.64770581484793!3d11.37106729179088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf164b38c3f05%3A0x6ebf2a7152c13d88!2sNo.5%20Vemandampalayam%2C%20Attavanai%20Hanumanpalli%20Post%2C%20Arachalur%20Via%2C%20Erode%2C%20Tamil%20Nadu%20638101%2C%20India!5e0!3m2!1sen!2sus!4v1684901700000!5m2!1sen!2sus"
             style="border: 0; width: 100%; height: 100%"
             allowfullscreen
           ></iframe>
@@ -259,122 +291,170 @@
       </div>
 
       <!-- ==== footer start ==== -->
-      <section class="footer_section_s2">
+      <section class="footer_section">
         <div class="footer_top">
           <div class="container">
             <div class="row">
+              <!-- About Widget -->
               <div class="col-lg-3 col-md-6 col-12">
                 <div class="widget_column widget_about">
                   <div class="footer_logo">
                     <a href="index.html">
-                      <img src="assets/images/logo-s2.png" alt="" />
+                      <img
+                        src="assets/images/logo3.png"
+                        alt="Sapphire Blue Social Trust Logo"
+                      />
                     </a>
                   </div>
                   <p>
-                    Nemo enim ipsam voluptate quia voluptas sit aspernatur aut
-                    odit aut fugit, sed quia magni this dolores eos qui ratione
-                    .
+                    Sapphire Blue Social Trust is committed to empowering
+                    marginalized communities through education, health, and
+                    skill development programs across Tamil Nadu.
                   </p>
                   <ul class="social_widget">
                     <li>
-                      <a href="#">
-                        <i class="ti-facebook"></i>
-                      </a>
+                      <a
+                        href="https://facebook.com/SapphireBlueSocialTrust"
+                        target="_blank"
+                        ><i class="ti-facebook"></i
+                      ></a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i class="ti-twitter-alt"></i>
-                      </a>
+                      <a
+                        href="https://twitter.com/SapphireBlueST"
+                        target="_blank"
+                        ><i class="ti-twitter-alt"></i
+                      ></a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i class="ti-linkedin"></i>
-                      </a>
+                      <a
+                        href="https://linkedin.com/company/sapphire-blue-social-trust"
+                        target="_blank"
+                        ><i class="ti-linkedin"></i
+                      ></a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i class="ti-instagram"></i>
-                      </a>
+                      <a
+                        href="https://instagram.com/SapphireBlueSocialTrust"
+                        target="_blank"
+                        ><i class="ti-instagram"></i
+                      ></a>
                     </li>
                   </ul>
                 </div>
               </div>
+
+              <!-- Quick Links Widget -->
               <div class="col-lg-3 col-md-6 col-12">
                 <div class="widget_column widget_link">
                   <h2>Quick Links</h2>
                   <ul>
-                    <li><a href="services-single.html">Best Services</a></li>
-                    <li><a href="services-single.html">Department</a></li>
-                    <li>
-                      <a href="services-single.html">Make An Appointment</a>
-                    </li>
-                    <li>
-                      <a href="services-single.html">About Our Company</a>
-                    </li>
-                    <li><a href="services-single.html">Business Contact</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Latest News</a></li>
+                    <li><a href="causes-single.html">Donate</a></li>
                   </ul>
                 </div>
               </div>
+
+              <!-- Gallery Widget -->
               <div class="col-lg-3 col-md-6 col-12">
-                <div class="widget_column widget_insatagram">
+                <div class="widget_column widget_instagram">
                   <h2>Our Gallery</h2>
-                  <ul>
+                  <ul
+                    style="
+                      display: grid;
+                      grid-template-columns: repeat(3, 80px);
+                      gap: 10px;
+                    "
+                  >
                     <li>
-                      <img src="assets/images/instagram/img-1.jpg" alt="" />
+                      <img
+                        src="assets/images/instagram/img-1.jpg"
+                        alt="Gallery Image 1"
+                      />
                     </li>
                     <li>
-                      <img src="assets/images/instagram/img-2.jpg" alt="" />
+                      <img
+                        src="assets/images/instagram/img-2.jpg"
+                        alt="Gallery Image 2"
+                      />
                     </li>
                     <li>
-                      <img src="assets/images/instagram/img-3.jpg" alt="" />
+                      <img
+                        src="assets/images/instagram/img-3.jpg"
+                        alt="Gallery Image 3"
+                      />
                     </li>
                     <li>
-                      <img src="assets/images/instagram/img-4.jpg" alt="" />
+                      <img
+                        src="assets/images/instagram/img-4.jpg"
+                        alt="Gallery Image 4"
+                      />
                     </li>
                     <li>
-                      <img src="assets/images/instagram/img-5.jpg" alt="" />
+                      <img
+                        src="assets/images/instagram/img-5.jpg"
+                        alt="Gallery Image 5"
+                      />
                     </li>
                     <li>
-                      <img src="assets/images/instagram/img-6.jpg" alt="" />
+                      <img
+                        src="assets/images/instagram/img-6.jpg"
+                        alt="Gallery Image 6"
+                      />
                     </li>
                   </ul>
                 </div>
               </div>
+
+              <!-- Contact Widget -->
               <div class="col-lg-3 col-md-6 col-12">
                 <div class="widget_column widget_contact">
-                  <h2>Our Contacts</h2>
+                  <h2>Contact Us</h2>
                   <div>
-                    <span
-                      >Adress: 27 Division St, Berakuti, NY 121102, USA</span
-                    >
+                    <span>
+                      No.5 Vemandampalayam, Attavanai Hanumanpalli Post,<br />
+                      Arachalur via, Erode - 638101,<br />
+                      Tamil Nadu, India
+                    </span>
                   </div>
                   <div>
-                    <span>Phone: +8 1440 456 782</span>
-                    <span>Fax: +8 846512 456 788</span>
+                    <span>Phone: +91 99762 9999</span><br />
+                    <span>Phone: +91 98945 35100</span><br />
+                    <span>Phone: +91 96777 77193</span>
                   </div>
                   <div>
-                    <span>Email: example@mail.com </span>
-                    <span>Website: yourwebsite.com</span>
+                    <span>Email: sapphirebluesocialtrust@gmail.com</span><br />
+                    <span>Website: www.sapphirebluesocialtrust.org</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <div class="footer_bottom">
           <div class="container">
             <div class="row">
               <div class="col-12">
-                <p>Copyright ©Nonta 2023 all rights reserved.</p>
+                <p>
+                  Copyright © Sapphire Blue Social Trust 2025. All rights
+                  reserved.
+                </p>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="shape-1">
+          <img src="assets/images/footer/shape-1.png" alt="Decorative Shape" />
+        </div>
         <div class="shape-2">
-          <img src="assets/images/footer/shape-3.png" alt="" />
+          <img src="assets/images/footer/shape-2.png" alt="Decorative Shape" />
         </div>
       </section>
-
       <a id="button"></a>
       <!-- plugins js -->
 
